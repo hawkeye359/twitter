@@ -17,7 +17,6 @@ h1 {
 #rightdiv {
     height: 520px;
     width: 62%;
-    background-color: white;
     min-width: 600px;
     flex-grow:1;
 } 
@@ -191,6 +190,10 @@ button:nth-of-type(1){
     }
     #rightdiv {
         padding-left: 20px;
+        width: 100px;
+        flex-basis: 100px;
+        flex-grow:1;
+        font-size: 100%;
     }
     #right {
         padding-left: 0px;
@@ -206,11 +209,11 @@ button:nth-of-type(1){
         width: 95%;
         }
     #button1 {
-        width: 100%;
+        width: 65%;
         padding: 15px 0 15px 20px;
     }
     #button2 {
-        width: 100%;
+        width: 65%;
         padding: 15px 0 15px 20px;
     }
 }
