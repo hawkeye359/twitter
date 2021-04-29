@@ -10,7 +10,6 @@ h1 {
 #leftdiv {
     height: 520px;
     width: 38%;
-    
     flex-grow: 1;
     flex-basis: 38%;
     flex-shrink: 1;
@@ -18,7 +17,7 @@ h1 {
 #rightdiv {
     height: 520px;
     width: 62%;
-    
+    background-color: white;
     min-width: 600px;
     flex-grow:1;
 } 
@@ -26,7 +25,6 @@ h1 {
     display: flex;
     flex-direction: column;
     margin: 20px;
-    
 }
 img {
     height: 100%;
@@ -38,13 +36,12 @@ img {
     width: 100%;
 }
 #top span:nth-of-type(2) {
-    
+
     height: 115px;
     padding-left: 20px;
     padding-right: 0px;
     padding-top: 35px;
     margin: 0px;
-    letter-spacing: 5px;
     font-family: 'Lato', sans-serif;
     font-weight: 800;
     font-size: 4rem;
@@ -66,9 +63,9 @@ img {
 }
 #button1 {
     height: 40px;
-    width: 200px;
     width: 65%;
 }
+
 #buttonfirst {
     border-radius: 25px;  
     background-color: rgb(29, 161, 242);
@@ -96,10 +93,10 @@ img {
     border: none;
     margin-left: 20px;
     font-size: 20px;
+    border: 1px solid rgb(29, 161, 242)
 }
 #button2 {
     height: 40px;
-    width: 200px;e;
     width: 65%;
     margin-top: 20px;
 }
@@ -107,12 +104,8 @@ button:nth-of-type(1){
     height: 40px;
     width:100%;
 }
-button:nth-of-type(2){
-    height: 40px;
-    width: 100%;
-}
+
 #top span:nth-of-type(4) {
-    
     height: 200px;
     width: 100%;
     display: flex;
@@ -133,31 +126,86 @@ button:nth-of-type(2){
     }
     #right {
         width: 100%;
-        align-items: center;
+        align-items: flex-start;
+        margin: 0px;
+        height: 100%;
     }
     #leftdiv {
         width: 100%;
     }
     #rightdiv {
         width: 65%;
-        flex-basis: 65%;
-        flex-shrink: 1;
-        
+        padding: 20px;
+        min-width: 400px;
+        align-items: center;
     }
     #top span:nth-of-type(1){
-        width: 65%;
+        width: 80%;
     }
     #top span:nth-of-type(2) {
-        width: 65%;
+        width: 80%;
         height: 200px;
     }
     #top span:nth-of-type(4){
         flex-direction: row;
-        padding: 0px 50px;
+        padding: 0px;
         height: 100px;
-        width: 65%;
+        width: 100%;
+        align-items: baseline;
     }
     #top span:nth-of-type(3){
-        width: 65%;
+        width: 80%;
+    }
+    #button1 {
+        height: 50%;
+        width: 50%;
+        flex-basis: 200px;
+        flex-grow: 1;
+        margin: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 15px;
+    }
+    #button2 {
+        height: 50%;
+        width: 50%;
+        flex-basis:  200px;
+        flex-grow: 1;
+        margin: 0px;
+        padding: 15px 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+    }
+    #buttonfirst{
+        margin: 0px;
+    }
+    #buttonsecond{
+        margin: 0px;
+    }
+}
+@media (max-width: 500px) {
+    #top span:nth-of-type(2) {
+        font-size: 2.5rem;
+        height: 100px;
+    }
+    #right {
+        padding-left: 0px;
+    }
+    #top span:nth-of-type(3) {
+        font-size: 1.5rem;
+    }
+    #top span:nth-of-type(4) {
+        flex-direction: column;
+        height: 150px;
+        width: 95%;
+        }
+    #button1 {
+        width: 100%;
+        padding: 15px 0 15px 20px;
+    }
+    #button2 {
+        width: 100%;
+        padding: 15px 0 15px 20px;
     }
 }
