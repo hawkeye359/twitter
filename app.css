@@ -189,8 +189,15 @@ button:nth-of-type(1){
         font-size: 2.5rem;
         height: 100px;
     }
+    #rightdiv {
+        padding-left: 20px;
+        width: 100vw;
+        height: 100vh;
+    }
     #right {
         padding-left: 0px;
+        width: 100%;
+        height: 100%;
     }
     #top span:nth-of-type(3) {
         font-size: 1.5rem;
